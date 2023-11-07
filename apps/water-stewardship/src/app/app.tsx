@@ -1,16 +1,13 @@
-import styled from '@emotion/styled';
-
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
+import { CssVarsProvider } from '@mui/joy/styles';
+import CssBaseline from '@mui/joy/CssBaseline';
+import Home from './routes/home';
 
 export function App() {
   return (
-    <StyledApp>
-      <NxWelcome title="water-stewardship" />
-    </StyledApp>
+    <CssVarsProvider>
+      <CssBaseline />
+      <Home />
+    </CssVarsProvider>
   );
 }
 
